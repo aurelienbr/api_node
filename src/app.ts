@@ -21,7 +21,6 @@ dotenv.config({ path: ".env.example" });
 
 // Controllers (route handlers)
 import * as userController from "./controllers/user";
-import * as contactController from "./controllers/contact";
 import * as coordController from "./controllers/coords";
 import * as internshipController from "./controllers/internships";
 import * as educationController from "./controllers/educations";
