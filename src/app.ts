@@ -24,6 +24,7 @@ import * as userController from "./controllers/user";
 import * as coordController from "./controllers/coords";
 import * as internshipController from "./controllers/internships";
 import * as educationController from "./controllers/educations";
+import translations from "./controllers/translations";
 import mail from "./controllers/mail";
 
 // API keys and Passport configuration
@@ -74,6 +75,8 @@ app.get("/educations", educationController.getEducations);
 app.get("/education/:id", educationController.getEducation);
 app.post("/education", educationController.createEducation);
 app.delete("/education/:id", educationController.deleteEducation);
+
+app.get("/translations", translations);
 
 app.post("/mail", mail);
 /**
