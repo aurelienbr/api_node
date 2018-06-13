@@ -4,7 +4,7 @@
   "author": "Bowden Kelly",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "npm run build-ts && node dist/server.js",
     "build": "npm run build-ts && npm run tslint",
     "watch-node": "nodemon dist/server.js",
     "watch":
